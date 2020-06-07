@@ -1,0 +1,20 @@
+{
+  "name": "k8s",
+  "version": "1.0.0",
+  "description": "k8s demo",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node ./src/index.js"
+  },
+  "keywords": [
+    "k8s"
+  ],
+  "author": "zdzwsz",
+  "license": "ISC",
+  "dependencies": {
+    "@kubernetes/client-node": "^0.11.2",
+    "nacos": "^2.0.0",
+    "node-schedule": "^1.3.2"
+  }
+}

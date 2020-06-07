@@ -1,0 +1,16 @@
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: demo-ingress-nginx
+  namespace: tt
+  annotations:
+    kubernetes.io/ingress.class: "nginx"
+spec:
+  rules:
+  - host: user.cb5957046151546979693f1332e3fe406.cn-shenzhen.alicontainer.com
+    http:
+      paths:
+      - path: /api
+        backend:
+          serviceName: spring-boot-demo
+          servicePort: 8081

@@ -18,6 +18,7 @@ spec:
       containers:
         - name: http-svc
           image: cilium/echoserver:latest
+          imagePullPolicy: IfNotPresent
           ports:
           - containerPort: 8080
 ---
